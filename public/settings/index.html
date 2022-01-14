@@ -14,20 +14,34 @@
 </head>
 
 <body>
-
-<h1>Settings</h1>
+<div id="theme-container">
+  <div id="body">
+<h1 id="heads" >Settings</h1>
 
 <center>
-<h3 class="tabtitle">Tab Cloak</h3>
+<h3 id="heads-1" class="tabtitle">Tab Cloak</h3>
 <input placeholder="Enter a title or icon" class="title">
-<button class="settitle" onclick="settitle()">Title</button>
-<button class="seticon" onclick="seticon()">Icon</button>
+<button id="heads-2" class="settitle" onclick="settitle()">Title</button>
+<button id="heads-3" class="seticon" onclick="seticon()">Icon</button>
 </center>
+<center>
+<br>
+<h3 id="heads-4"> Themes </h3> 
+<button id="heads-5" class="settitle" onclick="InvertTheme()">Invert</button>
+<button id="heads-7" class="settitle" onclick="SaturateTheme()">Saturate</button>
+<button id="heads-8" class="settitle" onclick="SepiaTheme()">Sepia</button>
+<button id="heads-12" class="seticon" onclick="NoTheme()">Default</button>
+<br>
+<h3 id="heads-6"> Beta Themes </h3> 
+<button id="heads-9" class="seticon" onclick="HackerTheme()">Hacker (Legacy)</button>
 
+</center>
 <div id="stars"></div>
 <div id="stars2"></div>
 <div id="stars3"></div>
 <script src="index.js"></script>
+</div>
+</div> 
 </div>
 </body>
 <script src="index.js"></script>
