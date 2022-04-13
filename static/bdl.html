@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async src="https://arc.io/widget.js"></script>
+    <title>Nebula</title>
+    <meta name="theme-color" content="#5a189a">
+    <meta property=og:title content=Nebula>
+    <meta property=og:description content="Open Source proxy that bypasses web filters, supports many sites".>
+    <meta property="og:image" content="https://cdn.discordapp.com/icons/893257531810521108/7036c73dd003554cd3db9f9bd5b18de5.webp">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/images/fav.png">
+  </head>
+  <body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <div class="banner_bg_main" id="banner_bg_main">
+      <!-- header top section start -->
+      <div class="container">
+        <div class="header_section_top" id="header_section_top">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="custom_menu">
+                <ul>
+                  <li>
+                    <a href="/games/index.html" class="dropbtn">Games</a>
+                  </li>
+                  <li>
+                    <a href="themes.html">Themes</a>
+                  </li>
+                  <li>
+                    <a href="https://discord.gg/Nvuf6zDdWy">Support Server</a>
+                  </li>
+                  <li>
+                    <a id=ads onclick="toggleAds()">Ads</a>
+                  </li>
+                  <li>
+                    <a id=nogg onclick="toggleNoGG()">NoGG</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search box -->
+      <div id="bkg">
+        <div id="cont">
+          <h1>nebula.</h1>
+          <form class="url" action="" method="POST" id="unblocker-form">
+            <input type="text" id="url" name="url" autofocus autocomplete="off" placeholder="Explore the web freely." />
+        </div>
+      </div>
+      </form>
+      <center>
+        <a href="https://discord.gg/yk33HZSZkU">
+          <img src="/images/adtemplate.png" height="100px" id="ad"></img>
+        </a>
+      </center>
+      <footer>
+        <div class="foot">
+          <h3>This website and all mentioning of "Nebula" and/or "Nebula Proxy" on this site are products of Nebula Services, 2021-2022</h3>
+      </footer>
+    </div>
+    <h4> v5.0 BETA DEVLAUNCH </h4>
+    <script>
+      //banner_bg_main
+    </script>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJYJ86TZKF"></script>
+    <script>
+      setTimeout(() => {
+        window.alert = "WARNING: This is an expiramental development version of Nebula. "
+      }, 5000);
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-GJYJ86TZKF');
+    </script>
+    <script>
+      window.addEventListener('load', () => {
+        function isUrl(val = '') {
+          if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+          return false;
+        };
+        const useNoGG = false;
+        const form = document.querySelector('form');
+        form.addEventListener('submit', event => {
+          event.preventDefault();
+          navigator.serviceWorker.register('./sw.js', {
+            scope: __uv$config.prefix
+          }).then(() => {
+            const value = event.target.firstElementChild.value;
+            
+            let url = value.trim();
+            if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+            else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+            const redirectTo = __uv$config.prefix + __uv$config.encodeUrl(url);
+            const option = localStorage.getItem('nogg');
+            if (option === 'on') {
+              const nogg = window.open('about:blank', '_self', '');
+              nogg.document.write(`
+								<!DOCTYPE html>
+								<style>
+                body {
+                  margin: 0;
+                }
+                iframe {
+                  display: block;
+                  border: none;
+                  height: 100vh;
+                  width: 100vw;
+                }
+                </style>
+								<iframe src=${redirectTo}>
+            `);
+            } else location.href = redirectTo;
+          });
+        });
+      });
+    </script>
+  </body>
+  <html>
