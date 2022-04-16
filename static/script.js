@@ -14,7 +14,7 @@ function toggleAds() {
   } else {
     sessionStorage.setItem('ads', 'on');
     advertisement.style.display = ''; 
-    ads.style.color = 'green';
+    ads.style.color = '';
   }
 }
 
@@ -23,7 +23,7 @@ if (sessionStorage.getItem('ads') == 'off') {
   ads.style.color = '';
 } else {
 	advertisement.style.display = ''
-  ads.style.color = 'green';
+  ads.style.color = '';
 }
 
 // document.body.style.backgroundColor = "rgb(60, 9, 108)"
