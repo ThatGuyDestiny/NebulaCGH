@@ -1,5 +1,5 @@
 # Nebula Proxy
-Nebula is one of the biggest web proxies to date, with supports several hundred sites, it's stunning and clean with constant updates. We also feature our NoGG technique which prevents legalized spyware from accessing or viewing your private online history. 
+Nebula is one of the biggest web proxies to date, with supports several hundred sites, it's stunning and clean with constant updates. We also feature our NoGG technique which prevents legalized spyware from accessing or viewing your private online history. Right now, we use the UltraViolet by TitaniumNetwork, but this coming June, we impliment our very first complete proxy: AERO
 
 # Deploying
 
