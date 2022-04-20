@@ -3,7 +3,7 @@ Nebula is one of the biggest web proxies to date, with supports several hundred 
 
 # Deploying
 
-<a href="https://repl.it/github/NebulaServices/Nebula"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
+<a href="https://repl.it/github/NebulaServices/Nebula"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a> (More deployment options coming soon!) 
 
 # Fully supported websites
 - Any static site
