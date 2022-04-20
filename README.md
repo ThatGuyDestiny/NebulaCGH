@@ -3,23 +3,16 @@ Open Source proxy that bypasses web filters, supports many sites. In short, it's
 
 # Deploying
 
-<a href="https://repl.it/github/GreenyDEV/Nebula"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
+<a href="https://repl.it/github/NebulaServices/Nebula"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
 
-# Supports
+# Fully supported websites
 - Any static site
-- Discord
-- Youtube (Sometimes buggy)
+- Discord 
+- Youtube 
 
-# Updates:
-- New UI Update!
-- Discord QR Support
-- Removed History flooder & Notepad
-- Will be adding a new feature that will allow the site to never be blocked.
-
-# Join the Discord Server for support
+# Join the Discord Server because we're really cool 
 https://discord.gg/Nvuf6zDdWy
 
-# FRONTEND COPYRIGHT
-THE NEBULA PROXY FRONTEND IS COPYRIGHTED BY JANGO AND GREENWORLD (DEVS). YOU ARE NOT ALLOWED TO TAKE THEM AND USE IT AS A "TEMPLATE."
-ONLY HARMONY, THE BACKEND, IS ALLOWED TO BE USED FREELY.
-CONSEQUENCES WILL OCCUR IF YOU ARE FOUND STEALING THE FRONTEND.
+# Copyright and DMCA information ⚠️
+Nebula front end is under 24/7 DMCA protection. All assets used in Nebula are Copyrights of Nebula Services 2021-2022. 
+
