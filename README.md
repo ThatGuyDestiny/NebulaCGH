@@ -1,5 +1,5 @@
 # Nebula Proxy
-Open Source proxy that bypasses web filters, supports many sites. In short, it's an enhanced alloy proxy to make it run much faster and smoother, with extra support for sites + exploits. I call this edited verison of Alloy, "Harmony." I believe Alloy had potential and Nebula is here to prove that.
+Nebula is one of the biggest web proxies to date, with supports several hundred sites, it's stunning and clean with constant updates. We also feature our NoGG technique which prevents legalized spyware from accessing or viewing your private online history. 
 
 # Deploying
 
