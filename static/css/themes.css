@@ -34,15 +34,14 @@ h1 {
 
 .header_section_top {
   position: fixed;
-    animation-name: fadein;
-    animation-duration: 2s;
-    width: 100%;
-    float: left;
-    background-color: #87986a;
-    clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
-    height: auto;
-    padding: 10px 0px;
-    color: white;
+  animation-name: fadein;
+  animation-duration: 2s;
+  float: left;
+  background-color: #87986a;
+  clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
+  height: auto;
+  padding: 10px 0px;
+  color: white;
 }
 
 .row {
